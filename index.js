@@ -5,8 +5,8 @@ const morgan = require("morgan");
 require("dotenv").config();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const bookRoutes = require('./routes/BookRoutes');
-const videoRoutes = require('./routes/VideoRoutes');
+// const bookRoutes = require('./routes/BookRoutes');
+// const videoRoutes = require('./routes/VideoRoutes');
 
 
 const app = express();
@@ -31,8 +31,8 @@ const connectDB = async () => {
 // Routes
 
 
-app.use('/books',bookRoutes);
-app.use('/api/v1/video',videoRoutes);
+// app.use('/books',bookRoutes);
+// app.use('/api/v1/video',videoRoutes);
 
 
 
