@@ -13,8 +13,6 @@ const corsConfig = {
 }
 app.use(cors(corsConfig))
 app.options("", cors(corsConfig))
-const bookRoutes = require('./routes/BookRoutes');
-const videoRoutes = require('./routes/VideoRoutes');
 
 
 const app = express();
@@ -36,11 +34,7 @@ const connectDB = async () => {
   }
 };
 
-// Routes
 
-
-app.use('/books',bookRoutes);
-app.use('/api/v1/video',videoRoutes);
 
 
 
